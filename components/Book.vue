@@ -34,12 +34,6 @@
     isImageLoaded.value = true;
   }
 
-  watch(isImageLoaded, (value) => {
-    if (value) {
-      console.log('Image loaded');
-    }
-  });
-
   function findBook(book) {
     return cart.value.find((b) => b.id === book.id);
   }
